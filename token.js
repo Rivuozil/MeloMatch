@@ -1,3 +1,7 @@
+//This script is used to generate the temporary token used for authorizing the app for accessing the user data
+
+
+
 var request = require('request'); // "Request" library
 
 function getSpotifyUserData(client_id, client_secret, callback) {
@@ -25,8 +29,8 @@ function getSpotifyUserData(client_id, client_secret, callback) {
 }
 
 // Replace 'CLIENT_ID' and 'CLIENT_SECRET' with your actual credentials
-var client_id = 'e4d6f403e7064770b504f98ea29c7b99';
-var client_secret = 'b55fe3672a914d6796b1ab44ac5e39ce';
+var client_id = 'Your app client id';
+var client_secret = 'Your app client secret';
 
 // Call the function and handle the response
 getSpotifyUserData(client_id, client_secret, function(error, userData) {
